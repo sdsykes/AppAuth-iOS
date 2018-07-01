@@ -88,7 +88,7 @@ static id<OIDSafariViewControllerFactory> __nullable gSafariViewControllerFactor
   BOOL openedSafari = NO;
   NSURL *requestURL = [request externalUserAgentRequestURL];
 
-  if (@available(iOS 11.0, *)) {
+  if (0) {
     __weak OIDExternalUserAgentIOS *weakSelf = self;
     NSString *redirectScheme = request.redirectScheme;
     SFAuthenticationSession *authenticationVC =
